@@ -83,7 +83,7 @@ body {
             font-size: 20px;
             margin: 0; }
           .parent .menu .summary button {
-            margin: 0; } }
+            margin: 17px; } }
       .parent .menu .summary::before {
         content: "";
         position: absolute;
