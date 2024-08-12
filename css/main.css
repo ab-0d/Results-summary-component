@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0; }
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .parent .menu {
+    display: flex;
+    width: 800px;
+    height: 550px;
+    background-color: white; }
+    @media (max-width: 375px) {
+      .parent .menu {
+        flex-direction: column;
+        width: 100%;
+        height: 100%; } }
+    .parent .menu .result {
+      width: 50%;
+      text-align: center;
+      padding: 20px 50px;
+      border-radius: 25px;
+      background: linear-gradient(#7857ff, #2e2be9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1; }
+      @media (max-width: 375px) {
+        .parent .menu .result {
+          margin-top: -7px;
+          width: 100%;
+          height: 45%; }
+          .parent .menu .result h2 {
+            font-size: 20px;
+            margin: 0; }
+          .parent .menu .result .percentage {
+            width: 130px;
+            height: 130px; } }
+      .parent .menu .result h2 {
+        color: #c8c7ff; }
+      .parent .menu .result .percentage {
+        color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        z-index: 1;
+        background: linear-gradient(#4e21ca, rgba(36, 33, 202, 0));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .parent .menu .result .percentage div {
+          font-size: 70px;
+          font-weight: bold;
+          margin-bottom: -20px;
+          color: white; }
+        .parent .menu .result .percentage p {
+          color: rgba(200, 199, 255, 0.858); }
+      .parent .menu .result h1 {
+        color: white; }
+      .parent .menu .result h1 + p {
+        color: #c8c7ff;
+        margin: 0; }
+    .parent .menu .summary {
+      width: 50%;
+      box-shadow: 10px 7px 20px 0 rgba(0, 0, 255, 0.1);
+      border-radius: 0 25px 25px 0;
+      padding: 30px;
+      position: relative; }
+      @media (max-width: 375px) {
+        .parent .menu .summary {
+          width: 100%;
+          height: 55%;
+          padding: 20px 30px 0px; }
+          .parent .menu .summary h2 {
+            font-size: 20px;
+            margin: 0; }
+          .parent .menu .summary button {
+            margin: 0; } }
+      .parent .menu .summary::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 80px;
+        background-color: white;
+        left: -80px;
+        top: 0; }
+    .parent .menu .boxes-summary .box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px; }
+      .parent .menu .boxes-summary .box .text {
+        display: flex; }
+        .parent .menu .boxes-summary .box .text div {
+          margin-left: 20px;
+          font-weight: bold;
+          font-size: 18px; }
+      .parent .menu .boxes-summary .box:first-child {
+        background-color: rgba(255, 87, 87, 0.07); }
+        .parent .menu .boxes-summary .box:first-child .text div {
+          color: #ff5757; }
+      .parent .menu .boxes-summary .box:nth-child(2) {
+        background-color: rgba(255, 176, 31, 0.07); }
+        .parent .menu .boxes-summary .box:nth-child(2) .text div {
+          color: #ffb01f; }
+      .parent .menu .boxes-summary .box:nth-child(3) {
+        background-color: rgba(0, 189, 145, 0.07); }
+        .parent .menu .boxes-summary .box:nth-child(3) .text div {
+          color: #00bd91; }
+      .parent .menu .boxes-summary .box:nth-child(4) {
+        background-color: rgba(17, 37, 212, 0.07); }
+        .parent .menu .boxes-summary .box:nth-child(4) .text div {
+          color: #1125d4; }
+      .parent .menu .boxes-summary .box .number {
+        color: #c8c7ff; }
+        .parent .menu .boxes-summary .box .number span {
+          color: #303b5a;
+          font-weight: bold; }
+    .parent .menu h2 {
+      color: #303b5a;
+      font-size: 28px; }
+    .parent .menu button {
+      width: 90%;
+      padding: 15px;
+      background-color: #303b5a;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 25px;
+      border: none; }
+      .parent .menu button:hover {
+        background: linear-gradient(#7857ff, #2e2be9); }
+
+/*# sourceMappingURL=main.css.map */
